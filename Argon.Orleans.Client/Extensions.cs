@@ -34,6 +34,6 @@ public static class Extensions
     public static async Task<string> SayHello(this IClusterClient client)
     {
         var hello = client.GetGrain<IHello>(Guid.NewGuid(), "Hello", null);
-        return await hello.DoIt(", Yuuki xuy");
+        return await hello.DoIt("log");
     }
 }
