@@ -1,3 +1,4 @@
+using System.Net;
 using System.Reflection;
 using Argon.Grains.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,7 +20,7 @@ public static class Extensions
                     cluster.ClusterId = "Api";
                     cluster.ServiceId = "Api";
                 });
-                config.UseLocalhostClustering();
+                config.UseStaticClustering(IPEndPoint.Parse("37.157.219.207:32746"));
             })
             .ConfigureLogging(logging => logging.AddConsole())
             .UseConsoleLifetime();
