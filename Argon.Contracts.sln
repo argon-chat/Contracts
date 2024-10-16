@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Argon.Grains", "Argon.Grains\Argon.Grains.csproj", "{E350B29D-89B9-4CF6-98D9-EE06B81CAF22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Argon.Grains.Interfaces", "Argon.Grains.Interfaces\Argon.Grains.Interfaces.csproj", "{909EB8F8-1CC9-4690-900F-B039662B28F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Argon.Orleans.Client", "Argon.Orleans.Client\Argon.Orleans.Client.csproj", "{076C9778-5FFE-4C43-A1CD-6B861CC94F9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E350B29D-89B9-4CF6-98D9-EE06B81CAF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E350B29D-89B9-4CF6-98D9-EE06B81CAF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E350B29D-89B9-4CF6-98D9-EE06B81CAF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E350B29D-89B9-4CF6-98D9-EE06B81CAF22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{909EB8F8-1CC9-4690-900F-B039662B28F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{909EB8F8-1CC9-4690-900F-B039662B28F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{909EB8F8-1CC9-4690-900F-B039662B28F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{909EB8F8-1CC9-4690-900F-B039662B28F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{076C9778-5FFE-4C43-A1CD-6B861CC94F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{076C9778-5FFE-4C43-A1CD-6B861CC94F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{076C9778-5FFE-4C43-A1CD-6B861CC94F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{076C9778-5FFE-4C43-A1CD-6B861CC94F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
