@@ -1,5 +1,4 @@
 using System.Net;
-using System.Reflection;
 using Argon.Grains.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -33,7 +32,7 @@ public static class Extensions
 
     public static async Task<string> SayHello(this IClusterClient client)
     {
-        var hello = client.GetGrain<IHello>(Guid.NewGuid(), "Hello", null);
+        var hello = client.GetGrain<IHello>(Guid.NewGuid(), "Hello");
         return await hello.DoIt("log");
     }
 }
