@@ -1,6 +1,10 @@
 namespace Argon.Grains.Interfaces;
 
-public interface IHello : IGrainWithGuidCompoundKey
+public interface IHello : IGrainWithIntegerKey
 {
-    Task<string> DoIt(string who);
+    [Alias("Create")]
+    Task<string> Create(string who);
+
+    [Alias("GetList")]
+    Task<List<string>> GetList();
 }

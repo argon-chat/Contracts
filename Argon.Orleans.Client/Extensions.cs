@@ -19,7 +19,7 @@ public static class Extensions
                     cluster.ClusterId = "Api";
                     cluster.ServiceId = "Api";
                 });
-                config.UseStaticClustering(IPEndPoint.Parse("37.157.219.207:32746"));
+                config.UseLocalhostClustering();
             })
             .ConfigureLogging(logging => logging.AddConsole())
             .UseConsoleLifetime();
@@ -32,7 +32,7 @@ public static class Extensions
 
     public static async Task<string> SayHello(this IClusterClient client)
     {
-        var hello = client.GetGrain<IHello>(Guid.NewGuid(), "Hello");
-        return await hello.DoIt("log");
+        var hello = client.GetGrain<IHello>(0);
+        return await hello.Create("log");
     }
 }
