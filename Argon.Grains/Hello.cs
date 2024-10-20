@@ -1,9 +1,9 @@
-using Argon.Grains.Interfaces;
-using Argon.Grains.Interfaces.States;
+namespace Argon.Grains;
+
+using Interfaces;
+using Interfaces.States;
 using Microsoft.Extensions.Logging;
 using Orleans.Providers;
-
-namespace Argon.Grains;
 
 [StorageProvider]
 public sealed class Hello(

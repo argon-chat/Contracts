@@ -1,10 +1,10 @@
-using Argon.Grains.Interfaces;
+namespace Argon.Orleans.Client;
+
+using global::Orleans.Configuration;
+using Grains.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Orleans.Configuration;
-
-namespace Argon.Orleans.Client;
 
 public static class Extensions
 {
