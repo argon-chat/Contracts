@@ -8,8 +8,7 @@ namespace Argon.Grains;
 [StorageProvider]
 public sealed class Hello(
     ILogger<Hello> logger,
-    [PersistentState("hellos", "OrleansStorage")]
-    IPersistentState<HelloArchive> archive)
+    [PersistentState("hellos", storageName: "OrleansStorage")] IPersistentState<HelloArchive> archive)
     : Grain, IHello
 {
     [ResponseTimeout("00:00:10")]
