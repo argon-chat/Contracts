@@ -1,4 +1,3 @@
-using System.Net;
 using Argon.Grains.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
